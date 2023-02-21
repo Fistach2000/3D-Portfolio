@@ -1,0 +1,312 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yantramanav:wght@300&display=swap");
+@import url("https://css.gg/youtube.css");
+html,
+body {
+  padding: 0px;
+  margin: 0px;
+  background-image: url("images/other/background_image_low_semidark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  scroll-behavior: smooth;
+}
+.main_navigation_container {
+  padding: 15px;
+  width: 100%;
+  height: 38px;
+  background-color: rgba(15, 15, 15, 0.7);
+  position: fixed;
+  text-align: right;
+  z-index: 9;
+  backdrop-filter: blur(5px);
+  animation-name: navbar_slide_animation;
+  animation-duration: 2s;
+}
+@keyframes navbar_slide_animation {
+  0% {
+    top: -50px;
+    background-color: black;
+    color: black;
+  }
+  25% {
+    background-color: rgba(140, 140, 140, 0.7);
+  }
+  100% {
+    top: 0px;
+    background-color: rgba(15, 15, 15, 0.7);
+    color: white;
+  }
+}
+.nav_button {
+  font-family: "Dosis", sans-serif;
+  border-radius: 0px;
+  font-size: 30px;
+  padding: 15px;
+  margin: 45px;
+  background-color: rgba(169, 169, 169, 0, 7);
+  color: white;
+  text-decoration: none;
+}
+.nav_button:hover {
+  background-color: rgb(26, 26, 26);
+  color: rgb(255, 168, 168);
+}
+.main_page_container {
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+  height: fit-content;
+}
+#animation {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  overflow: hidden;
+}
+.name_surname,
+.generalist,
+.animator {
+  border-radius: 15px;
+  background-color: rgba(15, 15, 15, 0.7);
+  backdrop-filter: blur(5px);
+  color: rgb(190, 190, 190);
+  border-style: solid;
+  border-width: 0px;
+  border-color: rgb(255, 255, 255);
+  padding: 10px 60px 30px 60px;
+  width: 30%;
+  height: 3vw;
+  position: absolute;
+  font-size: 3vw;
+  text-align: right;
+  font-family: "Yantramanav", sans-serif;
+}
+.capital {
+  font-weight: bold;
+  color: rgb(230, 230, 230);
+  font-size: 3.5vw;
+}
+.name_surname {
+  top: 10vw;
+  left: -2.5vw;
+  animation-name: name_surname_animation;
+  animation-duration: 2s;
+}
+.generalist {
+  top: 20vw;
+  left: -7vw;
+  animation-name: generalist_animation;
+  animation-duration: 2s;
+}
+.animator {
+  top: 30vw;
+  left: -12vw;
+  animation-name: animator_animation;
+  animation-duration: 2s;
+}
+.youtube_button {
+  top: 45vw;
+  left: 86vw;
+  border-radius: 20px;
+  background-color: rgba(71, 71, 71, 0);
+  backdrop-filter: blur(0px);
+  color: white;
+  padding: 0vw 0.5vw 0.5vw 0.5vw;
+  width: 10vw;
+  height: 1.5vw;
+  position: absolute;
+  font-size: 1.2vw;
+  text-align: center;
+  animation-name: youtube_animation;
+  animation-duration: 2s;
+  font-family: "Dosis", sans-serif;
+  text-decoration: none;
+  z-index: 8;
+}
+@keyframes name_surname_animation {
+  0% {
+    left: -1000px;
+    color: black;
+  }
+  25% {
+    background-color: rgba(140, 140, 140, 0.7);
+  }
+  100% {
+    left: -2.5vw;
+    background-color: rgba(15, 15, 15, 0.7);
+    color: rgb(190, 190, 190);
+  }
+}
+@keyframes generalist_animation {
+  0% {
+    left: -800px;
+    color: black;
+  }
+  25% {
+    background-color: rgba(140, 140, 140, 0.7);
+  }
+  100% {
+    left: -7vw;
+    background-color: rgba(15, 15, 15, 0.7);
+    color: rgb(190, 190, 190);
+  }
+}
+@keyframes animator_animation {
+  0% {
+    left: -600px;
+    color: black;
+  }
+  25% {
+    background-color: rgba(140, 140, 140, 0.7);
+  }
+  100% {
+    left: -12vw;
+    background-color: rgba(15, 15, 15, 0.7);
+    color: rgb(190, 190, 190);
+  }
+}
+@keyframes youtube_animation {
+  0% {
+    top: 700px;
+    color: black;
+    border-color: rgba(0, 0, 0, 0);
+  }
+
+  100% {
+    color: white;
+    border-color: rgba(255, 255, 255, 0);
+  }
+}
+.youtube_button:hover {
+  background-color: rgb(255, 0, 0);
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+.about_me_description {
+  padding: 20px;
+  margin: 50px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Dosis", sans-serif;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(39, 39, 39, 0.8);
+  color: white;
+}
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.main_portfolio_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(233, 233, 233);
+  min-height: 700px;
+  max-height: 3000px;
+  position: relative;
+}
+.portfolio_container_A,
+.portfolio_container_B,
+.portfolio_container_C,
+.portfolio_container_D,
+.portfolio_container_E {
+  margin: 40px;
+  height: 480px;
+  width: 853px;
+  background-color: rgb(255, 255, 255);
+}
+.portfolio_container_A img,
+.portfolio_container_B img,
+.portfolio_container_C img,
+.portfolio_container_D img,
+.portfolio_container_E img {
+  transition: transform 0.5s ease;
+}
+.portfolio_container_A:hover img,
+.portfolio_container_B:hover img,
+.portfolio_container_C:hover img,
+.portfolio_container_D:hover img,
+.portfolio_container_E:hover img {
+  transform: scale(1.1);
+}
+.portfolio_container_A:hover,
+.portfolio_container_B:hover,
+.portfolio_container_C:hover,
+.portfolio_container_D:hover,
+.portfolio_container_E:hover {
+  opacity: 0.7;
+}
+.main_software_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  min-height: 200px;
+  max-height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.software {
+  padding: 40px;
+}
+.artstation_transparent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  position: relative;
+}
+.header {
+  font-family: "Dongle", sans-serif;
+  padding: 65px 0px 60px 0px;
+  background-color: white;
+  font-size: 75px;
+  text-align: center;
+}
+.artstation_button_link {
+  font-family: "Dosis", sans-serif;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(39, 39, 39, 0.8);
+  text-align: center;
+  color: white;
+  height: 35px;
+  width: 300px;
+  transition: transform 0.5s ease;
+  display: inline-block;
+}
+.artstation_button_link:hover {
+  transform: scale(1.15);
+  color: black;
+  background-color: white;
+}
+.main_contact_container {
+  height: 125px;
+  background-color: rgb(0, 0, 0);
+  text-align: middle;
+  display: flex;
+  justify-content: center;
+}
+.email_contact {
+  height: 40%;
+  width: 50%;
+  margin: 20px 700px 30px 20px;
+  font-size: 20px;
+  font-family: "Dosis", sans-serif;
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
